@@ -1,7 +1,12 @@
-require "minispade-rails/version"
+require 'sprockets'
+require 'sprockets/engines'
 
-module Minispade
-  module Rails
-    # Your code goes here...
+require "minispade-rails/version"
+require 'minispade-rails/compiler'
+
+module MinispadeRails
+  class Engine < Rails::Engine
   end
+
+  Sprockets.register_engine '.js', Compiler
 end

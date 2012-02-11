@@ -1,0 +1,61 @@
+
+
+Started GET "/assets/templates/test.js" for 127.0.0.1 at 2012-01-05 08:30:34 +1100
+Compiled templates/test.js  (223ms)  (pid 21572)
+Served asset /templates/test.js - 200 OK (265ms)
+
+
+Started GET "/assets/templates/new_lines.js" for 127.0.0.1 at 2012-01-05 08:30:35 +1100
+Compiled templates/new_lines.js  (145ms)  (pid 21572)
+Served asset /templates/new_lines.js - 200 OK (154ms)
+  Processing by HomeController#index as HTML
+Completed 200 OK in 25ms (Views: 25.0ms)
+
+
+Started GET "/assets/templates/test.js" for 127.0.0.1 at 2012-02-11 15:05:12 +1100
+Served asset /templates/test.js - 404 Not Found (1ms)
+
+
+Started GET "/assets/templates/new_lines.js" for 127.0.0.1 at 2012-02-11 15:05:12 +1100
+Served asset /templates/new_lines.js - 404 Not Found (1ms)
+Processing by HomeController#index as HTML
+Completed 200 OK in 9ms (Views: 8.7ms)
+
+
+Started GET "/assets/templates/test.js" for 127.0.0.1 at 2012-02-11 15:07:31 +1100
+Served asset /templates/test.js - 404 Not Found (1ms)
+
+
+Started GET "/assets/test.js" for 127.0.0.1 at 2012-02-11 15:10:53 +1100
+Compiled test.js  (0ms)  (pid 58459)
+Served asset /test.js - 200 OK (13ms)
+
+
+Started GET "/assets/test.js" for 127.0.0.1 at 2012-02-11 15:11:23 +1100
+Compiled test.js  (0ms)  (pid 58514)
+Served asset /test.js - 200 OK (12ms)
+
+
+Started GET "/assets/test.js" for 127.0.0.1 at 2012-02-11 15:11:47 +1100
+Compiled test.js  (0ms)  (pid 58563)
+Served asset /test.js - 200 OK (12ms)
+
+
+Started GET "/assets/test.js" for 127.0.0.1 at 2012-02-11 15:12:04 +1100
+Compiled test.js  (0ms)  (pid 58613)
+Served asset /test.js - 200 OK (15ms)
+
+
+Started GET "/assets/test.js" for 127.0.0.1 at 2012-02-11 15:13:31 +1100
+Compiled test.js  (0ms)  (pid 58776)
+Served asset /test.js - 200 OK (13ms)
+
+
+Started GET "/assets/foo/test.js" for 127.0.0.1 at 2012-02-11 15:14:22 +1100
+Compiled foo/test.js  (0ms)  (pid 58835)
+Served asset /foo/test.js - 200 OK (13ms)
+
+
+Started GET "/assets/foo/test.js" for 127.0.0.1 at 2012-02-11 15:14:32 +1100
+Compiled foo/test.js  (0ms)  (pid 58878)
+Served asset /foo/test.js - 200 OK (14ms)

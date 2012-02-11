@@ -4,7 +4,7 @@ require "minispade-rails/version"
 
 Gem::Specification.new do |s|
   s.name        = "minispade-rails"
-  s.version     = Minispade::Rails::VERSION
+  s.version     = MinispadeRails::VERSION
   s.authors     = ["Keith Pitt"]
   s.email       = ["me@keithpitt.com"]
   s.homepage    = ""
@@ -18,7 +18,5 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  # specify any dependencies here; for example:
-  # s.add_development_dependency "rspec"
-  # s.add_runtime_dependency "rest-client"
+  s.add_development_dependency "rails", ["~> 3.1"]
 end
