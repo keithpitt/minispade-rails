@@ -11,12 +11,9 @@ Gem::Specification.new do |s|
   s.summary     = %q{TODO: Write a gem summary}
   s.description = %q{TODO: Write a gem description}
 
-  s.rubyforge_project = "minispade-rails"
-
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
-
   s.add_development_dependency "rails", ["~> 3.1"]
+
+  s.files = %w(README.md) + Dir["lib/**/*", "vendor/assets/**/*"]
+
+  s.require_paths = ["lib"]
 end
