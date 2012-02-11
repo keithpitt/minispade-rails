@@ -8,5 +8,5 @@ module MinispadeRails
   class Engine < Rails::Engine
   end
 
-  Sprockets.register_engine '.js', Compiler
+  Sprockets.register_engine '.spade', Compiler
 end

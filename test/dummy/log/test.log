@@ -59,3 +59,8 @@ Served asset /foo/test.js - 200 OK (13ms)
 Started GET "/assets/foo/test.js" for 127.0.0.1 at 2012-02-11 15:14:32 +1100
 Compiled foo/test.js  (0ms)  (pid 58878)
 Served asset /foo/test.js - 200 OK (14ms)
+
+
+Started GET "/assets/foo/test.js" for 127.0.0.1 at 2012-02-11 15:15:57 +1100
+Compiled foo/test.js  (0ms)  (pid 59282)
+Served asset /foo/test.js - 200 OK (12ms)
