@@ -40,6 +40,7 @@ module MinispadeRails
         @spades ||= []
         each_entry(root) do |pathname|
           if context.asset_requirable?(pathname)
+            context.depend_on pathname
             @spades << pathname
           end
         end
