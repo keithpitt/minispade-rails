@@ -28,6 +28,7 @@ module MinispadeRails
         "minispade.register(\"#{scope.logical_path}\", #{data.inspect});\n"
       else
         "minispade.register(\"#{scope.logical_path}\", function() { #{data} });\n"
+      end
     end
 
   end
