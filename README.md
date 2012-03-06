@@ -2,7 +2,7 @@
 
 minispade-rails allows you to compile your javascript files into strings that can be required at runtime using [minispade.js](https://github.com/wycats/minispade)
 
-To understand the problem that minispade-rails solves, read [AMD is Not the Answer](http://tomdale.net/2012/01/amd-is-not-the-answer/) by [@tomdale](http://github.com/tomdale).
+To understand the problem that minispade-rails solves, read [AMD is Not the Answer](http://tomdale.net/2012/01/amd-is-not-the-answer/) by [@tomdale](http://github.com/tomdale) and [Lazy evaluation of CommonJS modules](http://calendar.perfplanet.com/2011/lazy-evaluation-of-commonjs-modules/) by [Tobie Langel](http://tobielangel.com/)
 
 ## Getting started
 
