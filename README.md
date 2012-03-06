@@ -12,7 +12,15 @@ Add the gem to your application Gemfile:
 gem "minispade-rails"
 ```
 
-Then replace `require_tree` with `require_spade` and things should "just work".
+Then replace `require_tree` with `require_spade` and things should "just work", for example:
+
+```javascript
+//= require_tree ./your_application
+
+// Becomes...
+
+//= require_spade ./your_application
+```
 
 ## What does require_spade do?
 
