@@ -16,9 +16,7 @@ Then replace `require_tree` with `require_spade` and things should "just work", 
 
 ```javascript
 //= require_tree ./your_application
-
 // Becomes...
-
 //= require_spade ./your_application
 ```
 
@@ -55,7 +53,7 @@ Then during your application code, as you need access to "file_1", you simply ca
 minispade.require("path/to/file_1.js")
 ```
 
-And it will execute the file!
+And it will execute the file. If you've already called `minispade.require` before on the same file, it will do nothing.
 
 ## Configuration
 
