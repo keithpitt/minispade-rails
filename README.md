@@ -49,6 +49,26 @@ minispade.require("path/to/file_1.js")
 
 And it will execute the file!
 
+## Configuration
+
+The only configuration option that minispade-rails supports at the moment is the ability to switch on/off using a string to defer the parsing of the JavaScript.
+
+Setting `MinispadeRails::Config.deferred` in an initializer to `true` will cause the following output:
+
+```javascript
+minispade.register("path/to/file_1.js", "alert('File #1')");
+```
+
+Setting it to false will give you something like this:
+
+```javascript
+minispade.register("path/to/file_1.js", function() { alert('File #1') });
+```
+
+Sometimes, evaling code is actually slower than just parsing it. If you have a very small app, but want to future-proof the code, then setting `deferred` to false early on, will give you faster loading times.
+
+See http://blog.sproutcore.com/faster-loading-through-eval/ for more details.
+
 ## Why would you want to do this?
 
 For large JavaScript applications, you need to include and parse alot of JavaScript just to start showing something on the page. minispade-rails allows you to defer the parsing of parts of your application until you need it.
