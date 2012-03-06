@@ -55,7 +55,7 @@ Then during your application code, as you need access to "file_1", you simply ca
 minispade.require("path/to/file_1.js")
 ```
 
-And it will execute the file. If you've already called `minispade.require` before on the same file, it will do nothing.
+And it will execute the file. If you've already called `minispade.require` before on the same file, it will do nothing. Note that calling `minispade.require` is a synchronous function call.
 
 ## Configuration
 
