@@ -16,7 +16,7 @@ Add the gem to your application Gemfile:
 gem "minispade-rails"
 ```
 
-Then replace `require_tree` with `require_spade` and things should "just work", for example:
+Then replace `require_tree` with `require_spade` and things should _"just work"_, for example:
 
 ```javascript
 //= require_tree ./your_application
@@ -69,7 +69,7 @@ Setting `MinispadeRails::Config.deferred` in an initializer to `true` will cause
 minispade.register("path/to/file_1.js", "alert('File #1')");
 ```
 
-Setting it to false will give you something like this:
+Setting it to `false` will give you something like this:
 
 ```javascript
 minispade.register("path/to/file_1.js", function() { alert('File #1') });
