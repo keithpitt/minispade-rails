@@ -24,7 +24,7 @@ Then replace `require_tree` with `require_spade` and things should _"just work"_
 //= require_spade ./your_application
 ```
 
-You need to call `//= require minispade` to include minispade.js into your application. If you get "minispade is undefined" type errors. You're probably missing that line.
+You need to call `//= require minispade` to include minispade.js into your application. If you get "minispade is undefined" type errors, you're probably missing that line.
 
 ## What does require_spade do?
 
