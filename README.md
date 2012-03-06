@@ -19,6 +19,8 @@ Then replace `require_tree` with `require_spade` and things should _"just work"_
 ```javascript
 //= require_tree ./your_application
 // Becomes...
+
+//= require minispade
 //= require_spade ./your_application
 ```
 
