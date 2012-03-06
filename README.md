@@ -24,6 +24,8 @@ Then replace `require_tree` with `require_spade` and things should _"just work"_
 //= require_spade ./your_application
 ```
 
+You need to call `//= require minispade` to include minispade.js into your application. If you get "minispade is undefined" type errors. You're probably missing that line.
+
 ## What does require_spade do?
 
 Usually, `require_tree` will recursively go through your folder structure, compile the asset, and drop it into the current file. So you get something that looks like this:
