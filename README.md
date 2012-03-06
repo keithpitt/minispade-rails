@@ -1,5 +1,7 @@
 # minispade-rails  [![Build Status](https://secure.travis-ci.org/keithpitt/minispade-rails.png)](http://travis-ci.org/keithpitt/minispade-rails) [![Dependency Status](https://gemnasium.com/keithpitt/minispade-rails.png)](https://gemnasium.com/keithpitt/minispade-rails)
 
+For large JavaScript applications, you need to include and parse alot of JavaScript just to start showing something on the page. minispade-rails allows you to defer the parsing of parts of your application until you need it.
+
 minispade-rails allows you to compile your javascript files into strings that can be required at runtime using [minispade.js](https://github.com/wycats/minispade)
 
 To understand the problem that minispade-rails solves, read [AMD is Not the Answer](http://tomdale.net/2012/01/amd-is-not-the-answer/) by [@tomdale](http://github.com/tomdale) and [Lazy evaluation of CommonJS modules](http://calendar.perfplanet.com/2011/lazy-evaluation-of-commonjs-modules/) by [Tobie Langel](http://tobielangel.com/)
@@ -74,10 +76,6 @@ minispade.register("path/to/file_1.js", function() { alert('File #1') });
 Sometimes, evaling code is actually slower than just parsing it. If you have a very small app, but want to future-proof the code, then setting `deferred` to false early on, will give you faster loading times.
 
 See http://blog.sproutcore.com/faster-loading-through-eval/ for more details.
-
-## Why would you want to do this?
-
-For large JavaScript applications, you need to include and parse alot of JavaScript just to start showing something on the page. minispade-rails allows you to defer the parsing of parts of your application until you need it.
 
 ## Note on Patches/Pull Requests
 
