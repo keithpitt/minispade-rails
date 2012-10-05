@@ -18,7 +18,7 @@ if (typeof document !== "undefined") {
         }
       },
 
-      require: function(name) {
+      requireModule: function(name) {
         var loaded = minispade.loaded[name];
         var mod = minispade.modules[name];
 
@@ -33,7 +33,7 @@ if (typeof document !== "undefined") {
             }
           } else {
             if (minispade.root && name.substr(0,minispade.root.length) !== minispade.root) {
-              return minispade.require(minispade.root+name);
+              return minispade.requireModule(minispade.root+name);
             } else {
               throw "The module '" + name + "' could not be found";
             }
@@ -41,6 +41,22 @@ if (typeof document !== "undefined") {
         }
 
         return loaded;
+      },
+
+      requireAll: function(regex) {
+        for (var module in this.modules) {
+          if (!this.modules.hasOwnProperty(module)) { continue; }
+          if (regex && !regex.test(module)) { continue; }
+          minispade.requireModule(module);
+        }
+      },
+
+      require: function(path) {
+        if (typeof path === 'string') {
+          minispade.requireModule(path);
+        } else {
+          minispade.requireAll(path);
+        }
       },
 
       register: function(name, callback) {
