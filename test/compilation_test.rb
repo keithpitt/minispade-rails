@@ -18,6 +18,12 @@ class MinispadeTest < ActionController::IntegrationTest
     assert @response.body == "minispade.register(\"foo/test\", \"alert(\\\"foo\\\");\\n\");\n", "Was: #{@response.body.inspect}"
   end
 
+  test "require_spade should not load itself" do
+    get "/assets/application.js"
+    assert_response :success
+    assert_no_match /SystemStackError: stack level too deep/, @response.body, "Was: #{@response.body}"
+  end
+
   # This kinda sucks. If I don't do this, then the assets don't recompile when I change
   # the deferred flag.
   def switch_deferred(flag)
