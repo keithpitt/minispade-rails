@@ -15,7 +15,7 @@ class MinispadeTest < ActionController::IntegrationTest
 
     get "/assets/foo/test.js"
     assert_response :success
-    assert @response.body == "minispade.register(\"foo/test\", \"alert(\\\"foo\\\");\\n\");\n", "Was: #{@response.body.inspect}"
+    assert @response.body == "minispade.register(\"foo/test\", \"alert(\\\"foo\\\");\\n//@ sourceURL=foo/test.js\");\n", "Was: #{@response.body.inspect}"
   end
 
   # This kinda sucks. If I don't do this, then the assets don't recompile when I change
