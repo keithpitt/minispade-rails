@@ -17,6 +17,7 @@ module MinispadeRails
 
     def evaluate(scope, locals, &block)
       if MinispadeRails::Config.deferred
+        data << "//@ sourceURL=#{scope.logical_path}.js"
         "minispade.register(\"#{scope.logical_path}\", #{data.inspect});\n"
       else
         "minispade.register(\"#{scope.logical_path}\", function() { #{data} });\n"
